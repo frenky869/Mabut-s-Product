@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabut Products | Handcrafted Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold serif text-stone-900 tracking-wider">Mabut Products</a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-stone-600">
+                <a href="#shoes" class="hover:text-amber-700 transition-colors">SHOES</a>
+                <a href="#bags" class="hover:text-amber-700 transition-colors">HANDMADE BAGS</a>
+                <a href="#crochet" class="hover:text-amber-700 transition-colors">CROCHET</a>
+                <a href="#contact" class="hover:text-amber-700 transition-colors">CONTACT</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button class="md:hidden text-stone-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center bg-stone-900 overflow-hidden">
+        <!-- AI Generated Hero Image -->
+        <img src="https://image.pollinations.ai/prompt/artisanal%20fashion%20boutique%20display%20leather%20shoes%20bags%20crochet%20rustic%20lighting?width=1920&height=1080&nologo=true" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative z-10 text-center px-6 fade-in-up">
+            <span class="block text-amber-400 text-sm md:text-base tracking-[0.2em] mb-4 uppercase">Unique & Handcrafted</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">Authentic Style <br> for the Modern Soul</h1>
+            <p class="max-w-xl mx-auto text-stone-200 text-lg mb-10 font-light">Discover our exclusive collection of custom shoes, self-made bags, and artisanal crocheted apparel.</p>
+            <a href="#collection" class="inline-block bg-white text-stone-900 font-bold py-4 px-10 rounded-none hover:bg-amber-500 hover:text-white transition-all duration-300">
+                EXPLORE COLLECTION
+            </a>
+        </div>
+    </section>
+
+    <!-- Categories / Featured Products -->
+    <section id="collection" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Creations</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+
+            <!-- Shoes Section -->
+            <div id="shoes" class="mb-24">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <!-- AI Generated Shoes Image -->
+                        <img src="https://image.pollinations.ai/prompt/pair%20of%20handmade%20brown%20leather%20oxford%20shoes%20on%20wooden%20floor%20product%20photography?width=800&height=600&nologo=true" alt="Custom Leather Shoes" class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-amber-600 font-bold tracking-wider text-sm">FOOTWEAR</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-6">Bespoke Shoes</h3>
+                        <p class="text-stone-600 leading-relaxed mb-6">
+                            Step into comfort and style with our range of custom-designed shoes. Whether you need something for a casual walk or a formal event, our footwear blends durability with unique aesthetics.
+                        </p>
+                        <a href="#contact" class="text-stone-900 font-bold border-b-2 border-amber-500 hover:text-amber-600 transition-colors">ORDER CUSTOM PAIR &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bags Section (Reversed Layout) -->
+            <div id="bags" class="mb-24">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2">
+                        <!-- AI Generated Bag Image -->
+                        <img src="https://image.pollinations.ai/prompt/handmade%20canvas%20and%20leather%20tote%20bag%20hanging%20on%20chair%20product%20photography?width=800&height=600&nologo=true" alt="Handmade Bags" class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    </div>
+                    <div class="md:w-1/2 text-left md:text-right">
+                        <span class="text-amber-600 font-bold tracking-wider text-sm">ACCESSORIES</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-6">Self-Made Bags</h3>
+                        <p class="text-stone-600 leading-relaxed mb-6">
+                            Carry your essentials in a piece of art. Our handmade bags are crafted from high-quality fabrics and leather, featuring sturdy stitching and practical designs for everyday use.
+                        </p>
+                        <a href="#contact" class="text-stone-900 font-bold border-b-2 border-amber-500 hover:text-amber-600 transition-colors">BROWSE BAGS &larr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crochet Section -->
+            <div id="crochet">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <!-- AI Generated Crochet Image -->
+                        <img src="https://image.pollinations.ai/prompt/colorful%20hand%20crocheted%20summer%20crop%20top%20on%20mannequin%20boho%20style?width=800&height=600&nologo=true" alt="Crochet Clothing" class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-amber-600 font-bold tracking-wider text-sm">APPAREL</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-6">Crocheted Clothes</h3>
+                        <p class="text-stone-600 leading-relaxed mb-6">
+                            Experience the warmth and texture of hand-crocheted clothing. From intricate tops to cozy cardigans, each piece is stitched with love and attention to detail.
+                        </p>
+                        <a href="#contact" class="text-stone-900 font-bold border-b-2 border-amber-500 hover:text-amber-600 transition-colors">VIEW DESIGNS &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Product Grid Preview -->
+    <section class="bg-white py-20 px-6">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold text-center mb-12">Trending Now</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-md mb-4">
+                        <img src="https://image.pollinations.ai/prompt/leather%20sandals%20close%20up%20fashion?width=400&height=500&nologo=true" alt="Leather Sandals" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="bg-white text-black px-4 py-2 text-sm font-bold uppercase tracking-wider">Quick View</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg">Leather Sandals</h4>
+                    <p class="text-amber-600 font-semibold">$45.00</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-md mb-4">
+                        <img src="https://image.pollinations.ai/prompt/crochet%20sunflower%20top%20fashion?width=400&height=500&nologo=true" alt="Summer Crochet Top" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="bg-white text-black px-4 py-2 text-sm font-bold uppercase tracking-wider">Quick View</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg">Summer Crochet Top</h4>
+                    <p class="text-amber-600 font-semibold">$35.00</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-md mb-4">
+                        <img src="https://image.pollinations.ai/prompt/stylish%20canvas%20tote%20bag%20product%20shot?width=400&height=500&nologo=true" alt="Everyday Canvas Tote" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="bg-white text-black px-4 py-2 text-sm font-bold uppercase tracking-wider">Quick View</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg">Everyday Canvas Tote</h4>
+                    <p class="text-amber-600 font-semibold">$25.00</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-md mb-4">
+                        <img src="https://image.pollinations.ai/prompt/classic%20brown%20leather%20loafers%20shoes?width=400&height=500&nologo=true" alt="Classic Loafers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="bg-white text-black px-4 py-2 text-sm font-bold uppercase tracking-wider">Quick View</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg">Classic Loafers</h4>
+                    <p class="text-amber-600 font-semibold">$60.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order / Contact Section -->
+    <section id="contact" class="bg-stone-900 text-stone-300 py-20 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Place an Order</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">Interested in a custom piece? Fill out the form below or contact us directly to start your order. We deliver nationwide.</p>
+            
+            <form class="text-left bg-stone-800 p-8 rounded-lg shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Name</label>
+                        <input type="text" class="w-full bg-stone-700 border-none rounded p-3 text-white focus:ring-2 focus:ring-amber-500" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Email</label>
+                        <input type="email" class="w-full bg-stone-700 border-none rounded p-3 text-white focus:ring-2 focus:ring-amber-500" placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold mb-2">Interested In</label>
+                    <select class="w-full bg-stone-700 border-none rounded p-3 text-white focus:ring-2 focus:ring-amber-500">
+                        <option>Custom Shoes</option>
+                        <option>Handmade Bag</option>
+                        <option>Crochet Clothing</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold mb-2">Message / Order Details</label>
+                    <textarea rows="4" class="w-full bg-stone-700 border-none rounded p-3 text-white focus:ring-2 focus:ring-amber-500" placeholder="Tell us about the size, color, or design you are looking for..."></textarea>
+                </div>
+                <button type="button" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 rounded transition-colors uppercase tracking-widest">
+                    Send Inquiry
+                </button>
+            </form>
+
+            <div class="mt-12 flex justify-center space-x-8">
+                <a href="#" class="flex items-center hover:text-white transition-colors">
+                    <span class="font-bold mr-2">Email:</span> orders@mabutproducts.com
+                </a>
+                <a href="#" class="flex items-center hover:text-white transition-colors">
+                    <span class="font-bold mr-2">Phone:</span> +254 700 000 000
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-500 py-8 text-center text-sm">
+        <p>&copy; 2025 Mabut Products. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
